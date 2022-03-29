@@ -1,0 +1,61 @@
+Országnak van egy összeg legyen 10 000 Arany
+Országnak vannak erőforrásai: titán, vas, olaj, salétrom, ruha
+Országnak vannak egységei: Tank, Gyalog, Légierő
+Országnak van egy serege
+
+
+
+Egységek:
+Tank: támadás 10
+védekezés 15
+ára: 1000 arany
+Gyalog támadás 5
+védekezés 5
+ára 100 arany
+
+Légierő támadás 20
+védekezés 20
+ára: 2000 arany
+
+Nyersanyagok:
+Titán (Tank): +30% védekezés
++30% támadás
++ 2000 arany
+Vas (Tank):
+-10% támadás
++ 1000 arany
+
+Olaj: elengedhetetlen Tank és légierő esetén
+
+Salétrom: +10% támadás
+
+ruha (csak gyalog): +20% védekezés
++10% támadás
+
+1. csinálj egy jóslatot hogy ki nyerheti a csatát
+2. chatrulett szerüen lövik egymást az egységek
+véletlen szerüen választunk egy támadó egységet, és véletlen szerűen támad egyre
+
+addig megy a játék míg el nem fogy a másik serege
+
+
+1. Létrehozni egy országot:
+	private String name;
+	private int gold = 10000;
+	private ArrayList<String> countryResources = new ArrayList<String>;
+	private ArrayList<String> army = new ArrayList<String>;
+	
+	
+
+
+MilitaryUnit az egy abstract class
+
+Resource legyen interface
+
+Exceptionhandling kellhet bele.
+
+Legyen külön package 
+- a resource, 
+- militaryunit, 
+- prediction, 
+- war.
